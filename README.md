@@ -1,3 +1,13 @@
+This fork supports the Olinuxino A20 single board computer directly
+
+To make it work you can use the GPIO-2 connector, wiring is as follows:
+- VCC - PIN 1
+- GND - PIN 2
+- SCL - PIN5 (TW10-SCK)
+- SDA - PIN7 (TW10-SDA)
+ 
+Reference: https://www.olimex.com/wiki/images/a/a9/Example.jpg
+
 Raspberry Pi LCD 4x20 I²C python driver
 =====================
 

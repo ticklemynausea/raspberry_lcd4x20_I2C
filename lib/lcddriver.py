@@ -7,6 +7,9 @@ from time import *
 # LCD Address
 ADDRESS = 0x27
 
+# I2C BUS
+PORT = 0
+
 # commands
 LCD_CLEARDISPLAY = 0x01
 LCD_RETURNHOME = 0x02
@@ -56,7 +59,7 @@ Rs = 0b00000001 # Register select bit
 class lcd:
    #initializes objects and lcd
    def __init__(self):
-      self.lcd_device = i2c_lib.i2c_device(ADDRESS)
+      self.lcd_device = i2c_lib.i2c_device(ADDRESS, PORT)
 
       self.lcd_write(0x03)
       self.lcd_write(0x03)
